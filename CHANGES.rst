@@ -14,6 +14,7 @@ in progress
   by many more details about data inquiry / queries. Thanks, @meyerder.
 - Add ``plugins {list,status}`` subcommands, to inquire installed Grafana
   plugins. Thanks, @bhks.
+- CI: Add support for Python 3.12
 
 2023-07-30 0.15.2
 =================

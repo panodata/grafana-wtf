@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         os: [ "ubuntu-latest" ]
-        python-version: [ "3.7", "3.11" ]
+        python-version: [ "3.7", "3.11", "3.12" ]
         grafana-version: [ "6.7.6", "7.5.17", "8.5.27", "9.5.10", "10.1.2" ]
 
     env:
@@ -47,9 +47,10 @@ jobs:
           cache: 'pip'
           cache-dependency-path: 'setup.py'
 
-      - name: Install program
+      - name: Setup Project
         run: |
-          pip install --editable=.[test]
+          pip install pip 'setuptools>=64' --upgrade
+          pip install --editable='.[test]'
 
       - name: Run tests
         run: |
