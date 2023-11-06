@@ -6,6 +6,7 @@ grafana-wtf changelog
 in progress
 ===========
 
+- Add subcommand ``explore permissions``. Thanks, @meyerder.
 
 2023-11-15 0.17.0
 =================
